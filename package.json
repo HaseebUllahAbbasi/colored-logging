@@ -1,9 +1,10 @@
 {
   "name": "colored-logging",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "colored logging",
-  "main": "index.js",
+  "main": "src/Logger.js",
   "scripts": {
+    "test": "echo 'not tested yet'",
     "build": "",
     "lint": "eslint src  --ext .js --resolve-plugins-relative-to .",
     "lint:fix": "npm run lint -- --fix",
@@ -22,20 +23,19 @@
   },
   "homepage": "https://github.com/HaseebUllahAbbasi/colored-logging#readme",
   "devDependencies": {
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1",
+    "babel-loader": "^9.1.2",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4"
   },
   "dependencies": {
-    "@babel/core": "^7.21.4",
-    "@babel/preset-env": "^7.21.4",
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
-    "babel-loader": "^9.1.2",
     "chalk": "^4.1.2",
     "eslint-config-prettier": "^8.8.0",
-    "pino": "^8.11.0",
-    "pino-pretty": "^10.0.0",
-    "semantic-release": "^21.0.1",
-    "webpack": "^5.78.0",
-    "webpack-cli": "^5.0.1"
-  }
+    "semantic-release": "^21.0.1"
+  },
+  "peerDependencies": {}
 }

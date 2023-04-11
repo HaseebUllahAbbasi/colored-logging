@@ -11,7 +11,7 @@ jobs:
       - name: 🏗 Setup repo
         uses: actions/checkout@v3
         with:
-          token: ${{secrets.MY_GITHUB_PERSONAL_ACCESS_TOKEN}}
+          token: ${{secrets.GITHUB_TOKEN}}
 
       - name: 📦 Install
         uses: actions/setup-node@v3
@@ -28,5 +28,5 @@ jobs:
       - run: npm run build
       - run: npm run release
         env:
-          GITHUB_TOKEN: ${{secrets.MY_GITHUB_PERSONAL_ACCESS_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
