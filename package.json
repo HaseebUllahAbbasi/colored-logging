@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "description": "colored logging",
   "main": "src/Logger.js",
+  "module": "dist/Logger.bundle.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "test": "echo 'not tested yet'",
     "build": "npx webpack ",
@@ -20,6 +25,10 @@
       "development",
       "patch"
     ]
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry-url": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
