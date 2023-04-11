@@ -5,11 +5,12 @@
   "main": "src/Logger.js",
   "scripts": {
     "test": "echo 'not tested yet'",
-    "build": "",
+    "build": "npx webpack ",
     "lint": "eslint src  --ext .js --resolve-plugins-relative-to .",
     "lint:fix": "npm run lint -- --fix",
     "test:integration": "echo 'Not Defined Yet' ",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "semantic-release  --debug"
   },
   "repository": {
     "type": "git",

@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: 18.12.1
       - run: npm i
-      - run: npm run lint
+      - run: npm run lint:fix
       - run: npm run build
       - run: npm run release
         env:
