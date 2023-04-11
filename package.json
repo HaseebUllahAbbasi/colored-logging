@@ -11,6 +11,16 @@
     "test:integration": "echo 'Not Defined Yet' ",
     "release": "semantic-release  --debug"
   },
+  "engines": {
+    "node": ">=10"
+  },
+  "release": {
+    "branches": [
+      "main",
+      "development",
+      "patch"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HaseebUllahAbbasi/colored-logging.git"
