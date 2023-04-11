@@ -3,6 +3,9 @@ name:  🚀 Release Package
 permissions:
   contents: write
 
+on:
+  push:
+
 jobs:
   build:
     runs-on: ubuntu-latest
