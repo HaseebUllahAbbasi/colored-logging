@@ -35,7 +35,7 @@ jobs:
       - name: 🚀 Build and publish SDK
         uses: actions/setup-node@v3
         with:
-          node-version: 16.4.1
+          node-version: 18.12.1
       - run: npm run lint
       - run: npm run build
       - run: npm run release
