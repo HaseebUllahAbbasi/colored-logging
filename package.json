@@ -1,6 +1,6 @@
 {
   "name": "colored-logging",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "colored logging",
   "main": "src/Logger.js",
   "module": "dist/Logger.bundle.js",
