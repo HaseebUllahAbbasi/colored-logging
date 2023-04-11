@@ -9,7 +9,6 @@
     "lint": "eslint src  --ext .js --resolve-plugins-relative-to .",
     "lint:fix": "npm run lint -- --fix",
     "test:integration": "echo 'Not Defined Yet' ",
-    "prepare": "husky install",
     "release": "semantic-release  --debug"
   },
   "repository": {
@@ -24,12 +23,11 @@
   },
   "homepage": "https://github.com/HaseebUllahAbbasi/colored-logging#readme",
   "devDependencies": {
-    "husky": "^8.0.0",
-    "webpack": "^5.78.0",
-    "webpack-cli": "^5.0.1",
-    "babel-loader": "^9.1.2",
     "@babel/core": "^7.21.4",
-    "@babel/preset-env": "^7.21.4"
+    "@babel/preset-env": "^7.21.4",
+    "babel-loader": "^9.1.2",
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1"
   },
   "dependencies": {
     "@semantic-release/changelog": "^6.0.2",

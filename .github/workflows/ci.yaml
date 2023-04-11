@@ -1,10 +1,12 @@
 name:  🚀 Release Package  
 
-permissions:
-  contents: write
 
 on:
   push:
+    
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -27,7 +29,7 @@ jobs:
         with:
           node-version: 18.12.1
       - run: npm i
-      - run: npm run lint:fix
+      - run: npm run lint
       - run: npm run build
       - run: npm run release
         env:
