@@ -40,10 +40,5 @@ jobs:
           node-version: 18.12.1
       - run: npm run lint
       - run: npm run build
-      - run: npm run release
       - run: npm publish --access publish
-        env:
-          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
-
-
-
+      # - run: npm run release
