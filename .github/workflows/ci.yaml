@@ -1,31 +1,26 @@
 name:  🚀 Release Package  
 
-
 on:
   push:
-    
 
 permissions:
   contents: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  publish-npm:
+    runs-on: ubuntu-20.04
     env:
       NPM_TOKEN: ${{secrets.NPM_TOKEN}}
 
     steps:
       - name: 🏗 Setup repo
         uses: actions/checkout@v3
-        with:
-          token: ${{secrets.GITHUB_TOKEN}}
 
       - name: 📦 Install
         uses: actions/setup-node@v3
         with:
-          node-version: 18.12.1
+          node-version: 16.4.1
           registry-url: https://registry.npmjs.org/
-      - run: npm i
 
       - name: "Automated Version Bump"
         uses: "phips28/gh-action-bump-version@master"
@@ -37,8 +32,8 @@ jobs:
       - name: 🚀 Build and publish SDK
         uses: actions/setup-node@v3
         with:
-          node-version: 18.12.1
-      - run: npm run lint
+          node-version: 16.4.1
+      - run: npm install 
       - run: npm run build
       - run: npm publish --access publish
         env:

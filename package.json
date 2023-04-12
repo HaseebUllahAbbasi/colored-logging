@@ -34,7 +34,6 @@
     "type": "git",
     "url": "git+https://github.com/HaseebUllahAbbasi/colored-logging.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -57,5 +56,9 @@
     "eslint-config-prettier": "^8.8.0",
     "semantic-release": "^21.0.1"
   },
-  "peerDependencies": {}
+  "peerDependencies": {},
+  "keywords": [
+    "logger",
+    "color"
+  ]
 }
