@@ -29,11 +29,12 @@ jobs:
         with:
           version-type:  'patch'
 
-      - name: 🚀 Build and publish SDK
+      - name: 🚀 Lint, Build and release 
         uses: actions/setup-node@v3
         with:
           node-version: 16.4.1
       - run: npm install 
+      - run: npm run lint:fix 
       - run: npm run build
       - run: npm publish --access publish
         env:
