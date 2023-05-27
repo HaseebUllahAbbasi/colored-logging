@@ -15,5 +15,5 @@
     "quotes": ["error", "double"],
     "semi": ["error", "always"]
   },
-  "globals": { "process": true }
+  "globals": { "process": true, "__dirname": "readonly" }
 }
